@@ -17,10 +17,6 @@ html, body {
 main {
     position: relative;
     height: 100vh;
-
-    /* Icones redes sociais alinhados a direita */
-    display: flex;
-    justify-content: right;
 }
 
 section#telefone {
@@ -44,13 +40,23 @@ iframe#tela {
 }
 
 section#redes-sociais {
-    position: relative;
+    text-align: right;
     
     display: flex;
     flex-direction: column;
 }
 
-section#redes-sociais > a > img {
+section#redes-sociais img {
+    width: 50px;
+    margin: 5px;
     border-radius: 50%;
-    width: 70px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.596);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.568);
+    transition: transform .3s, border .5s;
 }
